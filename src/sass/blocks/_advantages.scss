@@ -1,0 +1,45 @@
+.advantages {
+    background-color: #F6F6F6;
+    &__header {
+        padding-top: 70px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__cards {
+        display: flex;
+        padding-top: 60px;
+        justify-content:center;
+        padding-bottom: 64px;
+    }
+    &__card {
+        text-align: center;
+        padding-left: 60px;
+        &_nopadding {
+            padding: 0 0 0 0;
+        }
+    }
+    &__card_title {
+        padding-top: 35px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__card_descr {
+        width: 273px;
+        padding-top: 20px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #0D0D0D;
+        line-height: 18px;
+        span {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: underline;
+            font-family: 'MuseoModerno';
+            color: #FF0000;
+        }
+    }           
+}        

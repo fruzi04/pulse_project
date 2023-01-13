@@ -1,0 +1,30 @@
+@media (max-width:767px) {
+	.header {
+		width: 740px;
+	}
+	.promo {
+		&__header {
+			font-size: 35px;
+			padding-right: 50px;
+		}
+		&__subheader {
+			font-size: 20px;
+			padding-right: 45px;
+		}
+		&__icons {
+			padding-right: 50px;
+		}
+		&__link {
+			padding-right: 50px;
+		}
+	}
+	.button_main {
+		margin-right: 50px;
+	}
+	
+	.advantages {
+		&__card_descr {
+			width: 150px;
+		}
+	}	
+}
