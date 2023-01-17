@@ -10,8 +10,23 @@ body {
     margin: 0 0 0 0;
 }
 
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    &_left {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+}
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'base/media';
+@import 'blocks/consultation'
+@import 'blocks/forms'

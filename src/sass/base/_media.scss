@@ -1,4 +1,4 @@
-@media (max-width:767px) {
+@media (max-width:768px) {
 	.header {
 		width: 740px;
 	}
@@ -27,4 +27,57 @@
 			width: 150px;
 		}
 	}	
+}
+@media (max-width: 575px) {
+	.header {
+		width: 420px;
+		padding-left: 2px;
+		&__official {
+			display: none;
+		}
+	}
+	
+	.promo {
+		
+		&__header {
+			font-size: 25px;
+			padding-right: 10px;
+		}
+		&__subheader {
+			font-size: 15px;
+			padding-right: 10px;
+		}
+		&__icons {
+			padding-right: 0px;
+			margin: 0 auto;
+			margin-top: 20px;
+			width: 395px;
+		}
+	}
+	
+	.button_main {
+		margin-top: 20px;
+		width: 200px;
+	}
+	
+	.advantages {
+		&__header {
+			font-size: 25px;
+		}
+		&__cards {
+			flex-direction: column;
+    		align-items: center;
+			margin: 0 auto;
+		}
+		&__card {
+			margin-top: 30px;
+			padding: 0;
+		}
+		&__card_nopadding {
+			margin: 0;
+		}
+		&__card_descr {
+			width: 300px;
+		}
+	}
 }
