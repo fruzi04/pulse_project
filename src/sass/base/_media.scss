@@ -26,7 +26,23 @@
 		&__card_descr {
 			width: 150px;
 		}
-	}	
+	}
+	
+	.consultation {
+		&__descr {
+			margin-left: 50px;
+		}
+		.title {
+			margin-left: 50px;
+		}
+		.title_left {
+			margin-left: 50px;
+		}
+		
+		.feed-form {
+			margin-left: 50px;
+		}
+	}
 }
 @media (max-width: 575px) {
 	.header {
@@ -78,6 +94,52 @@
 		}
 		&__card_descr {
 			width: 300px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.header {
+		flex-direction: column;
+		margin: 0 auto;
+		width: 300px;
+		&__contacts {
+			margin-top: 15px;
+		}
+	}
+	.promo {
+		width: 100%;
+		:nth-child(1) {
+			margin-top: 0;
+		}
+		&__icons {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+		&__icon {
+			margin-top: 15px;
+		}
+		&__header {
+			font-size: 20px;
+			margin: 0 auto;
+		}
+		&__subheader {
+			text-align: center;
+			font-size: 15px;
+		}	
+	}
+
+	.consultation {
+		.title {
+			margin: 0;
+		}
+		&__descr {
+			margin: 0;
+			padding-top: 10px;
+		}
+		.feed-form {
+			margin-left: 10px;
 		}
 	}
 }
