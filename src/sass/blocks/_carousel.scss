@@ -22,3 +22,10 @@
         left: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .slick-next, .slick-prev, .slick-arrow {
+        display: none;
+    }
+
+}
