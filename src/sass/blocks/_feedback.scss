@@ -1,0 +1,16 @@
+.feedback {
+    max-height: 920px;
+    &__comment {
+        &_name {
+            font-weight: 700;
+            font-size: 18px;
+            color: #0D0D0D;
+        }
+        &_descr {
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+    }
+    
+}

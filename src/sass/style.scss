@@ -26,6 +26,11 @@ body {
         font-weight: 500;
         font-size: 30px;
     }
+    &_feedback {
+        color: #0D0D0D;
+        font-size: 30px;
+        padding-top: 80px;
+    }
 }
 
 @import 'blocks/promo';
@@ -36,4 +41,5 @@ body {
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';
-@import 'blocks/catalog'
+@import 'blocks/catalog';
+@import 'blocks/feedback';
