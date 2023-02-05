@@ -168,7 +168,29 @@
     }
 }
 
-
+@media (max-width: 767px) {
+    .catalog {
+        &__content {
+            padding: 0 20px;
+        }
+        &-item {
+            width: 35%;
+            &__descr {
+                margin-right: 9px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .catalog {
+        &-item {
+            width: 100%;
+            &__descr {
+                margin-right: 13px;
+            }
+        }
+    }
+}
 
     
 

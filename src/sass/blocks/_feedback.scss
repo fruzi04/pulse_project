@@ -1,16 +1,56 @@
 .feedback {
-    max-height: 920px;
+    padding-bottom: 30px;
     &__comment {
-        &_name {
-            font-weight: 700;
-            font-size: 18px;
-            color: #0D0D0D;
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+        &_avatar {
+            width: 169px;
+            height: 169px;
         }
-        &_descr {
-            font-weight: 500;
-            font-size: 14px;
-            color: #646464;
+        &_content {
+            margin-left: 60px;
+            &_name {
+                font-weight: 700;
+                font-size: 18px;
+                color: #0D0D0D;
+            }
+            &_descr {
+                font-weight: 500;
+                font-size: 14px;
+                color: #646464;
+            }
+            &_message {
+                font-weight: 300;
+                font-size: 16px;
+                color: #0D0D0D;
+                margin-top: 10px;
+                span {
+                    font-family: 'MuseoModerno';
+                }
+            } 
         }
     }
-    
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        &__comment {
+            margin-left: 60px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .feedback {
+        &__comment {
+            margin: 60px auto;
+            flex-direction: column;
+            align-items: center;
+            &_content {
+                &_name {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
 }

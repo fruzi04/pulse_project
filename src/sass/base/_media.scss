@@ -1,6 +1,7 @@
 @media (max-width:768px) {
 	.header {
 		width: 740px;
+		padding: 0 5px;
 	}
 	.promo {
 		&__header {
@@ -55,9 +56,6 @@
 	.header {
 		width: 420px;
 		padding-left: 2px;
-		&__official {
-			display: none;
-		}
 	}
 	
 	.promo {
