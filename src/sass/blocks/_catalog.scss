@@ -170,21 +170,34 @@
 
 @media (max-width: 767px) {
     .catalog {
+        &__tab {
+            width: 170px;
+            font-size: 15px;
+        }
         &__content {
             padding: 0 20px;
         }
         &-item {
             width: 35%;
             &__descr {
-                margin-right: 9px;
+                padding-right: 15px;
             }
         }
     }
 }
 @media (max-width: 575px) {
     .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            width: 50%;
+            margin-top: 15px;
+        }
         &-item {
             width: 100%;
+            margin: 0 auto;
+            margin-top: 15px;
             &__descr {
                 margin-right: 13px;
             }
