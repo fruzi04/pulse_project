@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    
+    //Carousel
+    
     $('.carousel__inner').slick({
         speed: 1000,
         adaptiveHeight: true,
@@ -6,7 +9,8 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/right.svg"></button>',
     });
     
-    
+    //Catalog
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -25,5 +29,26 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__list_link');
+
+    //Modal
+
+    $('[data-modal="consultation"]').on('click', function () {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+    
+    // $('.button_mini').on('click', function () {
+    //     $('.overlay, #order').fadeIn('slow');
+    // });
+
+    $('.button_mini').each(function(i){
+       $(this).on('click', function () {
+            $('.overlay, #order').fadeIn('slow');
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+        }) 
+    });
 });
 
+console.log($('button_mini #order .modal__descr'));
