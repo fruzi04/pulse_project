@@ -38,6 +38,12 @@ $(document).ready(function(){
     $('.modal__close').on('click', function () {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
+
+    $(window).on('click', function(e) {
+        if (e.target.classList.contains('overlay')) {
+            $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+        }
+    });
     
     // $('.button_mini').on('click', function () {
     //     $('.overlay, #order').fadeIn('slow');
