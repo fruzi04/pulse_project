@@ -110,5 +110,7 @@ $(document).ready(function(){
             window.location.hash = hash;
           });
         }
-    }); 
+    });
+    
+    new WOW().init();
 });
