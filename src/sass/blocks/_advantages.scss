@@ -19,6 +19,12 @@
         &_nopadding {
             padding: 0 0 0 0;
         }
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__card_title {
         padding-top: 35px;
